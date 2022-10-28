@@ -10,4 +10,4 @@ router.get("/showAll", ProductController.showAll);
 router.get("/selectProductById/:id", ProductController.selectProductById);
 router.get("/showByIdDesc", ProductController.showByIdDesc);
 router.get("/selectProductByName/:name", ProductController.selectProductByName);
-router.get("/deleteProductById/:id", ProductController.deleteProductById);
+router.delete("/deleteProductById/:id", ProductController.deleteProductById);
