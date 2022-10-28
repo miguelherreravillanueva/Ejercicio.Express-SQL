@@ -11,3 +11,5 @@ router.get("/selectProductById/:id", ProductController.selectProductById);
 router.get("/showByIdDesc", ProductController.showByIdDesc);
 router.get("/selectProductByName/:name", ProductController.selectProductByName);
 router.delete("/deleteProductById/:id", ProductController.deleteProductById);
+
+module.exports = router

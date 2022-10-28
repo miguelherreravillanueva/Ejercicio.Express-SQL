@@ -4,8 +4,8 @@ const PORT = 3000;
 const db = require("./config/database")
 
 app.use(express.json());
-// app.use("/products",require("./routes/products"));
-// app.use("/categories",require("./routes/categories"));
+app.use("/products",require("./routes/products"));
+app.use("/categories",require("./routes/categories"));
 
 app.get("/createdb", (req, res) => {
     let sql = "CREATE DATABASE ejercicioExpressSQL";
